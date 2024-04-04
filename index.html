@@ -6,23 +6,25 @@
 </head>
 <body>
     <h3>Cupcake Fundraiser</h3>
-    <p>Your name:</p>
-    <input type="text" name="username" text="Please input your name"><br>
-    <p>Cupcake flavors:</p>
-    <input type="checkbox" id="flav1" name="flavor[0]" value="The Grasshopper">
-    <label for="flav1">The Grasshopper</label><br>
-    <input type="checkbox" id="flav2" name="flavor[1]" value="Whiskey Maple Bacon">
-    <label for="flav2">Whiskey Maple Bacon</label><br>
-    <input type="checkbox" id="flav3" name="flavor[2]" value="Carrot Walnut">
-    <label for="flav3">Carrot Walnut</label><br>
-    <input type="checkbox" id="flav4" name="flavor[3]" value="Salted Caramel Cupcake">
-    <label for="flav4">Salted Caramel Cupcake</label><br>
-    <input type="checkbox" id="flav5" name="flavor[4]" value="Red Velvet">
-    <label for="flav5">Red Velvet</label><br>
-    <input type="checkbox" id="flav6" name="flavor[5]" value="Lemon Drop">
-    <label for="flav6">Lemon Drop</label><br>
-    <input type="checkbox" id="flav7" name="flavor[6]" value="Tiramisu">
-    <label for="flav7">Tiramisu</label><br>
-    <a class="btn btn-success">Order</a>
+    <form action="process.php" method="POST">
+      <p>Your name:</p>
+      <input type="text" name="username" text="Please input your name"><br>
+      <p>Cupcake flavors:</p>
+      <input type="checkbox" id="flav1" name="flavor[]" value="The Grasshopper">
+      <label for="flav1">The Grasshopper</label><br>
+      <input type="checkbox" id="flav2" name="flavor[]" value="Whiskey Maple Bacon">
+      <label for="flav2">Whiskey Maple Bacon</label><br>
+      <input type="checkbox" id="flav3" name="flavor[]" value="Carrot Walnut">
+      <label for="flav3">Carrot Walnut</label><br>
+      <input type="checkbox" id="flav4" name="flavor[]" value="Salted Caramel Cupcake">
+      <label for="flav4">Salted Caramel Cupcake</label><br>
+      <input type="checkbox" id="flav5" name="flavor[]" value="Red Velvet">
+      <label for="flav5">Red Velvet</label><br>
+      <input type="checkbox" id="flav6" name="flavor[]" value="Lemon Drop">
+      <label for="flav6">Lemon Drop</label><br>
+      <input type="checkbox" id="flav7" name="flavor[]" value="Tiramisu">
+      <label for="flav7">Tiramisu</label><br>
+      <input class="btn btn-success" type="submit">
+    </form>
 </body>
 </html>

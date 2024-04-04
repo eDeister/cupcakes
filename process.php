@@ -13,4 +13,4 @@ foreach($flavors as $flavor) {
     $thanks .= '<li>'.$flavor.'</li><br>';
 }
 print('<p>Thank you '.$_POST['username'].' for your order! <br>'.
-    'Order Summary:<br>'.$thanks.'</ul>Order total: $10.50</p>');
+    'Order Summary:<br>'.$thanks.'</ul>Order total: '.$total.'</p>');

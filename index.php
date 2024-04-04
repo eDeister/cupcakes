@@ -1,2 +1,2 @@
 <?php
-echo '<p>I like cupcakes</p>';
+include_once('index.html');
